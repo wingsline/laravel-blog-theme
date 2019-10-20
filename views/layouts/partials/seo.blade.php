@@ -1,12 +1,12 @@
-<meta name="description" content="Arpad Olasz is a Laravel enthusiast and PHP developer.">
+<meta name="description" content="{{ config('theme.meta.description') }}">
 
     <meta property="og:site_name" content="{{ config('app.name') }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
-    <meta property="og:image" content="{{ asset('images/logo.png') }}">
+    <meta property="og:image" content="{{ config('theme.meta.image') }}">
 
-    <meta name="twitter:creator" content="@arpadolasz"/>
-    <meta name="twitter:site" content="@arpadolasz"/>
+    <meta name="twitter:creator" content="{{ config('theme.meta.twitter.creator') }}"/>
+    <meta name="twitter:site" content="{{ config('theme.meta.twitter.site') }}"/>
 
     <script type='application/ld+json'>
         {
@@ -15,16 +15,16 @@
             "@id":"#website",
             "url":"{{ config('app.url') }}",
             "name":"{{ config('app.name') }}",
-            "alternateName":"A blog about everything..."
+            "alternateName":"{{ config('theme.meta.jsonld.alternateName') }}"
         }
     </script>
     <script type='application/ld+json'>
         {
             "@context":"http:\/\/schema.org",
             "@type":"Person",
-            "sameAs":["https:\/\/twitter.com\/arpadolasz"],
+            "sameAs": {!! json_encode(config('theme.meta.jsonld.sameAs')) !!},
             "@id":"#person",
-            "name":"Arpad Olasz"
+            "name":"{{ config('theme.meta.jsonld.name') }}"
         }
     </script>
 
