@@ -1,0 +1,15 @@
+/* ==========================================================================
+  main.css
+   ========================================================================== */
+
+/* Configuration */
+/* main css file for the site using tailwindcss */
+
+/* @tailwind base; */
+@import "tailwindcss/base";
+
+/* @tailwind components; */
+@import "tailwindcss/components";
+
+/* @tailwind utilities; */
+@import "tailwindcss/utilities";
