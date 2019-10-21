@@ -10,6 +10,8 @@
 
     <!-- Styles -->
     <link nonce="{{ csp_nonce() }}" rel="stylesheet" href="{{ mix('css/main.css') }}">
+    <!-- Feed -->
+    @include('feed::links')
 </head>
 <body>
     <div id="app" class="container p-8">
