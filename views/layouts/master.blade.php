@@ -17,5 +17,6 @@
     <div id="app" class="container p-8">
         @yield('content')
     </div>
+    <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>

@@ -3,10 +3,12 @@
    ========================================================================== */
 
 /* Configuration */
+
 /* main css file for the site using tailwindcss */
 
 /* @tailwind base; */
 @import "tailwindcss/base";
+@import "highlight.js/styles/a11y-light.css";
 
 /* @tailwind components; */
 @import "tailwindcss/components";
