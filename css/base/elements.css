@@ -40,8 +40,8 @@ table {
   width: 100%;
 }
 
-table td,
-table th {
+td,
+th {
   @apply py-1 px-2;
 
   border: 1px solid theme('colors.gray.300');
