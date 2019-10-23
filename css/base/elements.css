@@ -1,0 +1,136 @@
+/* ==========================================================================
+  elements.css
+   ========================================================================== */
+
+body {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+a {
+    @apply text-blue-600 underline;
+}
+
+h1 {
+  font-size: 33px;
+  line-height: 57px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 47px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 38px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+table {
+  width: 100%;
+}
+
+table td,
+table th {
+  @apply py-1 px-2;
+
+  border: 1px solid theme('colors.gray.300');
+}
+
+p,
+ul,
+ol,
+blockquote,
+pre,
+table {
+  margin-bottom: 32px;
+}
+
+ul,
+ol {
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  list-style-type: initial;
+}
+
+ol li {
+  list-style: decimal;
+  margin-top: 12px;
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
+li ul,
+li ol {
+  margin-top: 12px;
+}
+
+blockquote {
+  padding-left: 20px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 0 0 0 7px;
+}
+
+sub,
+sup {
+  padding: 0 1px;
+}
+
+code,
+pre,
+kbd {
+  font-size: 15px;
+}
+
+pre {
+  padding: 12px;
+}
+
+kbd {
+  background-color: #fff;
+  padding: 3px 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.45);
+  margin: 0 1px;
+}
+
+.footnotes {
+  font-size: 13px;
+  line-height: 28px;
+  padding-top: 20px;
+
+  /*border-top: 1px dotted rgba(0, 0, 0, 0.15);*/
+}
+
+.footnotes p {
+  margin-bottom: 20px;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol,
+.footnotes :last-child {
+  margin-bottom: 0;
+}

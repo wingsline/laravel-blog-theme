@@ -9,6 +9,7 @@
 /* @tailwind base; */
 @import "tailwindcss/base";
 @import "highlight.js/styles/a11y-light.css";
+@import "./base/elements.css";
 
 /* @tailwind components; */
 @import "tailwindcss/components";
