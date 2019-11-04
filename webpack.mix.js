@@ -1,5 +1,5 @@
-const mix = require('laravel-mix');
-const glob = require('glob-all');
+const mix = require("laravel-mix");
+const glob = require("glob-all");
 const autoprefixer = require("autoprefixer");
 const cssmqpacker = require("css-mqpacker");
 const postcssDiscardComments = require("postcss-discard-comments");
@@ -32,9 +32,9 @@ const postCssOptions = [
 // whitelist these class names
 mix.purgeCss({
     paths: () => glob.sync([
-        path.join(__dirname, 'views/**/*.blade.php'),
-        path.join(__dirname, 'js/**/*.js'),
-        path.join(__dirname, 'node_modules/highlight.js/**/*.js'),
+        path.join(__dirname, "views/**/*.blade.php"),
+        path.join(__dirname, "js/**/*.js"),
+        path.join(__dirname, "node_modules/highlight.js/**/*.js"),
     ]),
     whitelistPatterns: [/hljs/]
 });
@@ -44,17 +44,17 @@ mix.options({
     processCssUrls: false,
     postCss: postCssOptions
 })
-    .setPublicPath('public')
+    .setPublicPath("public")
     .postCss("css/main.css", "public")
-    .js("js/app.js", "public")
-    .copyDirectory('images', "public/images")
+    .js('js/app.js', "public")
+    .copyDirectory("images", "public/images")
     .version()
     .extract()
     .webpackConfig({
         resolve: {
             symlinks: false,
             alias: {
-                '@': path.resolve(__dirname, 'js/'),
+                "@": path.resolve(__dirname, "js/"),
             },
         }
     });
