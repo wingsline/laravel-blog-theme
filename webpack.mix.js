@@ -47,6 +47,7 @@ mix.options({
     .setPublicPath('public')
     .postCss("css/main.css", "public")
     .js("js/app.js", "public")
+    .copyDirectory('images', "public/images")
     .version()
     .extract()
     .webpackConfig({

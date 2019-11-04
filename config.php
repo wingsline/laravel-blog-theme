@@ -14,7 +14,7 @@ return [
         // <meta name="description">
         'description' => 'Arpad Olasz is a Laravel enthusiast and PHP developer.',
         // <meta property="og:image">
-        'image' => asset('images/logo.png'),
+        'image' => asset('theme/images/logo.png'),
         // twitter:creator, twitter:site
         'twitter' => [
             'creator' => '@arpadolasz',

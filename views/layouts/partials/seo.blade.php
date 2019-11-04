@@ -27,5 +27,4 @@
             "name":"{{ config('theme.meta.jsonld.name') }}"
         }
     </script>
-
 @yield('seo')

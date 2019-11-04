@@ -14,9 +14,11 @@
     {{-- Showing only the blog feed. If custom feeds are also set, use @include('feed::links')  --}}
     @foreach(config('feed.feeds') as $name => $feed)
         @if ($name === 'blog')
-            <link rel="alternate" type="{{ $feed['type'] ?? 'application/atom+xml' }}" href="{{ route("feeds.{$name}") }}" title="{{ $feed['title'] }}">
+
+    <link rel="alternate" type="{{ $feed['type'] ?? 'application/atom+xml' }}" href="{{ route("feeds.{$name}") }}" title="{{ $feed['title'] }}">
         @endif
     @endforeach
+
 </head>
 <body>
     <div id="app" class="container p-8">
