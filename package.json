@@ -18,9 +18,9 @@
         "postcss-import": "^12.0.1",
         "postcss-inline-svg": "^4.1.0",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.15.2",
+        "sass": "^1.32.6",
         "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.6.10"
+        "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
         "highlight.js": "^10.4.1",
